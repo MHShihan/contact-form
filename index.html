@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contct Form</title>
+    <style>
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 12px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #03945f;
+      }
+
+      .container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/actio.php">
+        <label for="fname"> First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Your name.." />
+
+        <label for="lname"> Last Name</label>
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="Your last name.."
+        />
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="Canada">Canda</option>
+          <option value="Australia">Australia</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          name="subject"
+          id="subject"
+          placeholder="Write something.."
+          rows="10"
+        ></textarea>
+
+        <input type="submit" placeholder="submit" />
+      </form>
+    </div>
+  </body>
+</html>
